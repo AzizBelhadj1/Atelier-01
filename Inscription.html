@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Inscription</title>
+    <link rel="stylesheet" href="Atelier.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="services.html">Services</a>
+            <a href="inscription.html">Inscription</a>
+        </nav>
+        <img src="agency.png" height="700" width="1700" >
+    </header>
+
+    <section id="pageContent">
+        <h3>Inscription</h3>
+        <form action="#" method="get" name="inscription">
+          <table> 
+            <tr >
+              <td>
+                <label for="lname">Nom <span>*</span></label>
+              </td>
+              <td> 
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  onkeyup="nameValidation()"
+                  
+                />
+  
+              </td>
+              <td >
+              
+                <p style="color: red" id="nomEr""></p>
+              
+              </td>
+              
+            </tr>
+            <tr>
+              <td><label for="fname">Prénom</label></td>
+              <td>
+                <input type="text" id="fname" name="fname" />
+              </td>
+  
+              <td >
+              
+                <p style="color: red" id="prenomEr""></p>
+              
+              </td>
+            </tr>
+            <tr>
+              <td><label for="add">Address</label></td>
+              <td>
+                <textarea name="add" id="add" cols="20" rows="7"></textarea>
+              </td>
+              <td >
+              
+                <p style="color: red" id="adressEr""></p>
+              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Numéro Téléphone <span>*</span></label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  
+                />
+              </td>
+              <td >
+              
+                <p style="color: red" id="phoneEr""></p>
+              
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dob">date de naissance</label></td>
+              <td>
+                <input type="date" id="date" name="date" />
+              </td>
+              
+            </tr>
+            <tr>
+              <td>
+                  <label for="email">Email<span>*</span></label>
+              </td>
+              <td>
+                  <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      required
+                  />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pass">Mot de passe <span>*</span></label>
+              </td>
+              <td>
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                 
+                />
+              </td>
+              <td >
+              
+                <p style="color: red" id="passEr""></p>
+              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="cpass">Confirmation mot de passe  <span>*</span></label>
+              </td>
+              <td>
+                <input
+                  type="password"
+                  name="cpass"
+                  placeholder="Confirmer votre mot de passe"
+                  id="cpass"
+                  
+                />
+              </td>
+              <td >
+              
+                <p style="color: red" id="cPassEr""></p>
+              
+              </td>
+            </tr>
+  
+            <tr>
+              <td></td>
+              <td>
+                <button type="submit" value="Submit" onclick="passValidation()" >Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+  
+        <p style="color: red" id="erreur""></p>
+      </section>
+
+    <footer>
+        <p>Contactez-nous par email : <a href="mailto:Azizagency@gmail.com">Azizagency@gmail.com</a></p>
+        <p>Adresse : Esprit el ghazela </p>
+    </footer>
+    <script src="INSCRI.js"></script>
+</body>
+</html>
